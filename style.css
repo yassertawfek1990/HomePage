@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 5px !important; */
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 65vw;
+}
+.photo{
+    position: relative;
+}
+.name{
+    position: absolute;
+    /* margin-bottom: 10px; */
+    padding-top: 350px;
+    color: rgb(108, 2, 43);
+    font-size: 30px;
+    padding-left: 50px;
+    text-align: center;
+}
+.bg {
+
+    z-index: 0;
+    position: absolute;
+    height: 40%;
+    width: 100vw;
+    background-color:rgb(17, 76, 76);
+    transform-origin: 0;
+    transform: skewY(-7deg);
+    box-shadow: 0 0 5px rgb(164, 163, 163);
+  }
+
+  .headerContent{
+    padding: 40px 0px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+  }
+  .about{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.419);
+    box-shadow: 0 0 5px rgb(164, 163, 163);
+    /* width: 100%; */
+    margin: 35px 0;
+    gap: 25px;
+    padding: 25px;
+    font-size: larger;
+
+  }
+  .aboutIcons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 50px;
+
+  }
+
+  .main{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 50px; /* Optional: Add space between items */
+    flex-direction: column;
+    align-content: center;
+  }
+  .Screenshot{
+    background-color: brown;
+    aspect-ratio: 5 / 4; /* Width : Height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    border: 1px solid rgba(128, 128, 128, 0.419);
+    box-shadow: 0 0 5px rgb(164, 163, 163);
+  }
+  .project{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .desc{
+    padding: 15px;
+    margin-bottom: 35px;
+  }
+
+  footer{
+    margin-top: 40px;
+    background-color:rgb(17, 76, 76);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .bottom{
+    width: 65vw;
+
+  }
+  .end{
+    margin: 40px 0px;
+    /* width: 80%; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 90px;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+  footer img{
+    min-width: 159px;
+    max-width: 100%;
+    min-height: 220px;
+    max-height: 100%;
+  }
+
+  .footerItems{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+  }
+  .connect{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .connect div{
+    display: flex;
+    gap: 3px;
+  }
+  svg{
+    font-size: 3px;
+    width: 25px;
+  }
+  picture {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+ 
+  @media screen and (max-width: 900px) {
+   
+    .bg {
+        height: 600px;
+        top: 0;
+    }
+
+    header {
+        min-height: 500px;
+        padding: 80px;
+    }
+
+    .headerContent{
+        display: block;
+    }
+
+
+    .name {
+        top: -350px;
+        right: -190px;
+    }
+    .photo {
+        float: left; /* Makes the image float to the left */
+        left: -70px;
+        margin-right: 40px; /* Adds spacing between image and text */
+        width: 300px; /* Adjust width as needed */
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(105, 104, 104, 0.404);
+        text-shadow: 0 3px 10px rgba(105, 104, 104, 0.404);
+      }
+      
+      .about{
+        display: block;
+        width: 65vw;
+        height: auto;
+
+      }
+  
+      .aboutIcons {
+        display: none;
+    }
+    .about h1 {
+        text-align: center;
+        margin-bottom: 10px;
+ 
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .photo {
+        all: initial;
+        position: relative;
+    }
+
+    .headerContent{
+        all: initial;
+        /* padding: 40px 0px; */
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+      }
+      .about{
+        all: initial;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(128, 128, 128, 0.419);
+        box-shadow: 0 0 5px rgb(164, 163, 163);
+        width: 49vw;
+        transform: translateX(-57px);
+        margin: 35px 0;
+        gap: 25px;
+        padding: 25px;
+        font-size: larger;
+    
+      }
+      .aboutIcons {
+        display: flex;
+   
+    
+      }
+.name{
+    all: initial;
+    position: absolute;
+    /* margin-bottom: 10px; */
+    padding-top: 330px;
+    color: rgb(108, 2, 43);
+    font-size: 28px;
+    font-weight: 400;
+    padding-left: 4px;
+    text-align: center;
+}
+    .headerContent {
+      /* display: flex !important;   */
+      flex-direction:column !important;
+      gap: 0;
+    }
+   
+    .end{
+        flex-direction:column !important;
+        gap: 10px;
+    }
+
+    
+  }
